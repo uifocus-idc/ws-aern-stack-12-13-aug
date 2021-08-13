@@ -1,0 +1,47 @@
+:root {
+    /* Brand Colors */
+    --color-brand: #FFCD33;
+    --color-brand-rgb: 255, 205, 51;
+
+    --color-secondary: #f4511e;
+    --color-secondary-rgb: 244, 81, 30;
+  
+    /* Neutral Colors */
+    --color-neutral-10: #ffffff;
+    --color-neutral-20: #f6f6f9;
+    --color-neutral-30: #e0e0e6;
+    --color-neutral-40: #b0afb6;
+    --color-neutral-50: #8d8c95;
+    --color-neutral-60: #6a6973;
+    --color-neutral-70: #474552;
+    --color-neutral-80: #333333;
+    --color-neutral-90: #0C0C0C;
+    --color-neutral-100: #000000;
+  
+    --color-neutral-10-rgb: 255, 255, 255;
+    --color-neutral-100-rgb: 0, 0, 0;
+  
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+  
+    /* Font Sizes */
+    --fs-xs: 0.6rem;
+    --fs-sm: 0.8rem;
+    --fs-rg: 1rem;
+    --fs-md: 1.20rem;
+    --fs-lg: 1.72rem;
+    --fs-xl: 2.4rem;
+    --fs-xxl: 0.8rem;
+    --fs-xxxl: 0.8rem;
+  
+    /* Line Height */
+    --lh-sm: 1rem;
+    --lh-rg: 1.6rem;
+    --lh-lg: 2.4rem;
+  
+}
+
+

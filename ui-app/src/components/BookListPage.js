@@ -19,15 +19,15 @@ const BookListPage = () => {
 
     },[]);
 
-    return <div>
+    return <div className="list-book">
         {console.log(bookList)}
         {bookList.map(book => 
 
-            <div>
-               <p>{"Title: " + book.title}</p>
-               <p>{"Author: " + book.author}</p>
-               <img src={book.cover} alt={book.title} onClick={() => history.push(`/bookdetails/${book.book_id}`)}></img>
-               <p>{"Description: " + book.description}</p>
+            <div className="book">
+               <h2 className="book-title">{book.title}</h2>
+               <p className="book-author">{"by " + book.author}</p>
+               <img className="book-cover" src={book.cover} alt={book.title} onClick={() => history.push(`/bookdetails/${book.book_id}`)}></img>
+               <p className="book-desc">{"Description: " + book.description}</p>
             </div>
         )}
     </div>
