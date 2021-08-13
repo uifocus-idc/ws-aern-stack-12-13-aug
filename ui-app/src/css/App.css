@@ -1,9 +1,93 @@
-.header-panel{
-  height: 56px;
-  background: #000;
-  color: #fff;
+@import url("variables.css");
+
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-neutral-90);
+  color: var(--color-neutral-20);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
 }
 
-h1{
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-brand);
+  z-index: 1;
+}
+
+.header-title {
   margin: 0;
+  padding: 0.6rem 1rem;
+  font-size: var(--fs-lg);
+}
+
+.header-title-anchor {
+  color: var(--color-neutral-100);
+  cursor: pointer;
+}
+
+/* Book List */
+.list-book {
+  justify-content: center;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  margin: 2rem auto;
+}
+
+.book {
+  position: relative;
+  overflow: hidden;
+  width: 15rem;
+  border: solid 1px var(--color-neutral-60);
+  border-radius: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--color-neutral-80);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.book:hover {
+  border-width: 3px;
+  border-color: var(--color-neutral-40);
+  transform: scale(1.05);
+}
+
+.book-title {
+  color: var(--color-neutral-10);
+  margin-bottom: 0;
+}
+
+.book-author {
+  margin-top: 0.4rem;
+  color: var(--color-neutral-30);
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+}
+
+.book-desc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 1rem;
+  display: none;
+  font-size: var(--fs-rg);
+  color: var(--color-neutral-100);
+  background-color: var(--color-neutral-10);
+}
+
+.book:hover .book-desc {
+  display: block;
 }
