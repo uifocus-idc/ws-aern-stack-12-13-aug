@@ -1,10 +1,13 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 
 const Header = () => {
 
+    const history = useHistory();
+
     return <div className='header-panel'>
-        <h1 className='h1'>Night Owl</h1>
+        <a className='h1' onClick={() => history.push('/')}>Night Owl</a>
     </div>;
 
 };
